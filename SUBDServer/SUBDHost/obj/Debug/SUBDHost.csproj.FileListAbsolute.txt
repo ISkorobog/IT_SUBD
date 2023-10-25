@@ -1,0 +1,13 @@
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\bin\Debug\SUBDForm.exe.config
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\bin\Debug\SUBDForm.exe
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\bin\Debug\SUBDForm.pdb
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\bin\Debug\SUBDLab.dll
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\bin\Debug\SUBDLab.pdb
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\bin\Debug\SUBDLab.dll.config
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDHost.csproj.AssemblyReference.cache
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDForm.Properties.Resources.resources
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDHost.csproj.GenerateResource.cache
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDHost.csproj.CoreCompileInputs.cache
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDHost.csproj.CopyComplete
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDForm.exe
+C:\Users\igor\source\repos\SUBDServer\SUBDForm\obj\Debug\SUBDForm.pdb

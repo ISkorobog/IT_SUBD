@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://example.com/" targetNamespace="http://example.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AddRow" type="tns:AddRow" />
+  <xs:element name="AddRowResponse" type="tns:AddRowResponse" />
+  <xs:element name="BaseHasPath" type="tns:BaseHasPath" />
+  <xs:element name="BaseHasPathResponse" type="tns:BaseHasPathResponse" />
+  <xs:element name="BaseOpened" type="tns:BaseOpened" />
+  <xs:element name="BaseOpenedResponse" type="tns:BaseOpenedResponse" />
+  <xs:element name="ChangeCurrentTable" type="tns:ChangeCurrentTable" />
+  <xs:element name="ChangeCurrentTableResponse" type="tns:ChangeCurrentTableResponse" />
+  <xs:element name="ChangeRowValue" type="tns:ChangeRowValue" />
+  <xs:element name="ChangeRowValueResponse" type="tns:ChangeRowValueResponse" />
+  <xs:element name="Changed" type="tns:Changed" />
+  <xs:element name="ChangedResponse" type="tns:ChangedResponse" />
+  <xs:element name="Close" type="tns:Close" />
+  <xs:element name="CloseResponse" type="tns:CloseResponse" />
+  <xs:element name="ColumnsInTable" type="tns:ColumnsInTable" />
+  <xs:element name="ColumnsInTableResponse" type="tns:ColumnsInTableResponse" />
+  <xs:element name="CreateTable" type="tns:CreateTable" />
+  <xs:element name="CreateTableResponse" type="tns:CreateTableResponse" />
+  <xs:element name="DeleteRows" type="tns:DeleteRows" />
+  <xs:element name="DeleteRowsResponse" type="tns:DeleteRowsResponse" />
+  <xs:element name="DeleteTable" type="tns:DeleteTable" />
+  <xs:element name="DeleteTableResponse" type="tns:DeleteTableResponse" />
+  <xs:element name="GetCurrentTableName" type="tns:GetCurrentTableName" />
+  <xs:element name="GetCurrentTableNameResponse" type="tns:GetCurrentTableNameResponse" />
+  <xs:element name="GetNameInCurrentTable" type="tns:GetNameInCurrentTable" />
+  <xs:element name="GetNameInCurrentTableResponse" type="tns:GetNameInCurrentTableResponse" />
+  <xs:element name="GetNameInTable" type="tns:GetNameInTable" />
+  <xs:element name="GetNameInTableResponse" type="tns:GetNameInTableResponse" />
+  <xs:element name="GetNumberOfFieldsInTable" type="tns:GetNumberOfFieldsInTable" />
+  <xs:element name="GetNumberOfFieldsInTableResponse" type="tns:GetNumberOfFieldsInTableResponse" />
+  <xs:element name="GetNumberOfTables" type="tns:GetNumberOfTables" />
+  <xs:element name="GetNumberOfTablesResponse" type="tns:GetNumberOfTablesResponse" />
+  <xs:element name="GetPath" type="tns:GetPath" />
+  <xs:element name="GetPathResponse" type="tns:GetPathResponse" />
+  <xs:element name="GetTableName" type="tns:GetTableName" />
+  <xs:element name="GetTableNameResponse" type="tns:GetTableNameResponse" />
+  <xs:element name="GetTypeInCurrentTable" type="tns:GetTypeInCurrentTable" />
+  <xs:element name="GetTypeInCurrentTableResponse" type="tns:GetTypeInCurrentTableResponse" />
+  <xs:element name="GetTypeInTable" type="tns:GetTypeInTable" />
+  <xs:element name="GetTypeInTableResponse" type="tns:GetTypeInTableResponse" />
+  <xs:element name="GetValueInTable" type="tns:GetValueInTable" />
+  <xs:element name="GetValueInTableResponse" type="tns:GetValueInTableResponse" />
+  <xs:element name="OpenBase" type="tns:OpenBase" />
+  <xs:element name="OpenBaseResponse" type="tns:OpenBaseResponse" />
+  <xs:element name="OpenNew" type="tns:OpenNew" />
+  <xs:element name="OpenNewResponse" type="tns:OpenNewResponse" />
+  <xs:element name="OpenTable" type="tns:OpenTable" />
+  <xs:element name="OpenTableResponse" type="tns:OpenTableResponse" />
+  <xs:element name="RowsInTable" type="tns:RowsInTable" />
+  <xs:element name="RowsInTableResponse" type="tns:RowsInTableResponse" />
+  <xs:element name="Save" type="tns:Save" />
+  <xs:element name="SaveAs" type="tns:SaveAs" />
+  <xs:element name="SaveAsResponse" type="tns:SaveAsResponse" />
+  <xs:element name="SaveResponse" type="tns:SaveResponse" />
+  <xs:element name="TableOpened" type="tns:TableOpened" />
+  <xs:element name="TableOpenedResponse" type="tns:TableOpenedResponse" />
+  <xs:element name="Union" type="tns:Union" />
+  <xs:element name="UnionResponse" type="tns:UnionResponse" />
+  <xs:element name="getAllFiles" type="tns:getAllFiles" />
+  <xs:element name="getAllFilesResponse" type="tns:getAllFilesResponse" />
+  <xs:complexType name="GetNameInTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNameInTableResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Changed">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="ChangedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNumberOfTables">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="GetNumberOfTablesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SaveAs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SaveAsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetValueInTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetValueInTableResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetTypeInTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetTypeInTableResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AddRow">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="AddRowResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="GetPath">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="GetPathResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RowsInTable">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="RowsInTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreateTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreateTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetTypeInCurrentTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetTypeInCurrentTableResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Union">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UnionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetTableName">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetTableNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetCurrentTableName">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="GetCurrentTableNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ChangeRowValue">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+      <xs:element name="arg1" type="xs:int" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ChangeRowValueResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BaseHasPath">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="BaseHasPathResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNumberOfFieldsInTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNumberOfFieldsInTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenNew">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="OpenNewResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="Close">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="CloseResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="Save">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="SaveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeleteRows">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeleteRowsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TableOpened">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="TableOpenedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BaseOpened">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="BaseOpenedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ColumnsInTable">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="ColumnsInTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenBaseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ChangeCurrentTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ChangeCurrentTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeleteTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeleteTableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllFiles">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllFilesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNameInCurrentTable">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetNameInCurrentTableResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

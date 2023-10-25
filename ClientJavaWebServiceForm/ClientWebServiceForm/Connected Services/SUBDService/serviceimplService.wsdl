@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://example.com/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="serviceimplService" targetNamespace="http://example.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:45000/q?xsd=1" namespace="http://example.com/" />
+    </xsd:schema>
+  </types>
+  <message name="GetNameInCurrentTable">
+    <part name="parameters" element="tns:GetNameInCurrentTable" />
+  </message>
+  <message name="GetNameInCurrentTableResponse">
+    <part name="parameters" element="tns:GetNameInCurrentTableResponse" />
+  </message>
+  <message name="GetTypeInCurrentTable">
+    <part name="parameters" element="tns:GetTypeInCurrentTable" />
+  </message>
+  <message name="GetTypeInCurrentTableResponse">
+    <part name="parameters" element="tns:GetTypeInCurrentTableResponse" />
+  </message>
+  <message name="GetNumberOfTables">
+    <part name="parameters" element="tns:GetNumberOfTables" />
+  </message>
+  <message name="GetNumberOfTablesResponse">
+    <part name="parameters" element="tns:GetNumberOfTablesResponse" />
+  </message>
+  <message name="GetNumberOfFieldsInTable">
+    <part name="parameters" element="tns:GetNumberOfFieldsInTable" />
+  </message>
+  <message name="GetNumberOfFieldsInTableResponse">
+    <part name="parameters" element="tns:GetNumberOfFieldsInTableResponse" />
+  </message>
+  <message name="GetCurrentTableName">
+    <part name="parameters" element="tns:GetCurrentTableName" />
+  </message>
+  <message name="GetCurrentTableNameResponse">
+    <part name="parameters" element="tns:GetCurrentTableNameResponse" />
+  </message>
+  <message name="ChangeCurrentTable">
+    <part name="parameters" element="tns:ChangeCurrentTable" />
+  </message>
+  <message name="ChangeCurrentTableResponse">
+    <part name="parameters" element="tns:ChangeCurrentTableResponse" />
+  </message>
+  <message name="OpenNew">
+    <part name="parameters" element="tns:OpenNew" />
+  </message>
+  <message name="OpenNewResponse">
+    <part name="parameters" element="tns:OpenNewResponse" />
+  </message>
+  <message name="OpenBase">
+    <part name="parameters" element="tns:OpenBase" />
+  </message>
+  <message name="OpenBaseResponse">
+    <part name="parameters" element="tns:OpenBaseResponse" />
+  </message>
+  <message name="Close">
+    <part name="parameters" element="tns:Close" />
+  </message>
+  <message name="CloseResponse">
+    <part name="parameters" element="tns:CloseResponse" />
+  </message>
+  <message name="getAllFiles">
+    <part name="parameters" element="tns:getAllFiles" />
+  </message>
+  <message name="getAllFilesResponse">
+    <part name="parameters" element="tns:getAllFilesResponse" />
+  </message>
+  <message name="SaveAs">
+    <part name="parameters" element="tns:SaveAs" />
+  </message>
+  <message name="SaveAsResponse">
+    <part name="parameters" element="tns:SaveAsResponse" />
+  </message>
+  <message name="GetTableName">
+    <part name="parameters" element="tns:GetTableName" />
+  </message>
+  <message name="GetTableNameResponse">
+    <part name="parameters" element="tns:GetTableNameResponse" />
+  </message>
+  <message name="OpenTable">
+    <part name="parameters" element="tns:OpenTable" />
+  </message>
+  <message name="OpenTableResponse">
+    <part name="parameters" element="tns:OpenTableResponse" />
+  </message>
+  <message name="RowsInTable">
+    <part name="parameters" element="tns:RowsInTable" />
+  </message>
+  <message name="RowsInTableResponse">
+    <part name="parameters" element="tns:RowsInTableResponse" />
+  </message>
+  <message name="GetValueInTable">
+    <part name="parameters" element="tns:GetValueInTable" />
+  </message>
+  <message name="GetValueInTableResponse">
+    <part name="parameters" element="tns:GetValueInTableResponse" />
+  </message>
+  <message name="GetTypeInTable">
+    <part name="parameters" element="tns:GetTypeInTable" />
+  </message>
+  <message name="GetTypeInTableResponse">
+    <part name="parameters" element="tns:GetTypeInTableResponse" />
+  </message>
+  <message name="Changed">
+    <part name="parameters" element="tns:Changed" />
+  </message>
+  <message name="ChangedResponse">
+    <part name="parameters" element="tns:ChangedResponse" />
+  </message>
+  <message name="ColumnsInTable">
+    <part name="parameters" element="tns:ColumnsInTable" />
+  </message>
+  <message name="ColumnsInTableResponse">
+    <part name="parameters" element="tns:ColumnsInTableResponse" />
+  </message>
+  <message name="CreateTable">
+    <part name="parameters" element="tns:CreateTable" />
+  </message>
+  <message name="CreateTableResponse">
+    <part name="parameters" element="tns:CreateTableResponse" />
+  </message>
+  <message name="Union">
+    <part name="parameters" element="tns:Union" />
+  </message>
+  <message name="UnionResponse">
+    <part name="parameters" element="tns:UnionResponse" />
+  </message>
+  <message name="AddRow">
+    <part name="parameters" element="tns:AddRow" />
+  </message>
+  <message name="AddRowResponse">
+    <part name="parameters" element="tns:AddRowResponse" />
+  </message>
+  <message name="Save">
+    <part name="parameters" element="tns:Save" />
+  </message>
+  <message name="SaveResponse">
+    <part name="parameters" element="tns:SaveResponse" />
+  </message>
+  <message name="GetPath">
+    <part name="parameters" element="tns:GetPath" />
+  </message>
+  <message name="GetPathResponse">
+    <part name="parameters" element="tns:GetPathResponse" />
+  </message>
+  <message name="BaseHasPath">
+    <part name="parameters" element="tns:BaseHasPath" />
+  </message>
+  <message name="BaseHasPathResponse">
+    <part name="parameters" element="tns:BaseHasPathResponse" />
+  </message>
+  <message name="DeleteTable">
+    <part name="parameters" element="tns:DeleteTable" />
+  </message>
+  <message name="DeleteTableResponse">
+    <part name="parameters" element="tns:DeleteTableResponse" />
+  </message>
+  <message name="DeleteRows">
+    <part name="parameters" element="tns:DeleteRows" />
+  </message>
+  <message name="DeleteRowsResponse">
+    <part name="parameters" element="tns:DeleteRowsResponse" />
+  </message>
+  <message name="GetNameInTable">
+    <part name="parameters" element="tns:GetNameInTable" />
+  </message>
+  <message name="GetNameInTableResponse">
+    <part name="parameters" element="tns:GetNameInTableResponse" />
+  </message>
+  <message name="TableOpened">
+    <part name="parameters" element="tns:TableOpened" />
+  </message>
+  <message name="TableOpenedResponse">
+    <part name="parameters" element="tns:TableOpenedResponse" />
+  </message>
+  <message name="BaseOpened">
+    <part name="parameters" element="tns:BaseOpened" />
+  </message>
+  <message name="BaseOpenedResponse">
+    <part name="parameters" element="tns:BaseOpenedResponse" />
+  </message>
+  <message name="ChangeRowValue">
+    <part name="parameters" element="tns:ChangeRowValue" />
+  </message>
+  <message name="ChangeRowValueResponse">
+    <part name="parameters" element="tns:ChangeRowValueResponse" />
+  </message>
+  <portType name="interfaceq">
+    <operation name="GetNameInCurrentTable">
+      <input wsam:Action="http://example.com/interfaceq/GetNameInCurrentTableRequest" message="tns:GetNameInCurrentTable" />
+      <output wsam:Action="http://example.com/interfaceq/GetNameInCurrentTableResponse" message="tns:GetNameInCurrentTableResponse" />
+    </operation>
+    <operation name="GetTypeInCurrentTable">
+      <input wsam:Action="http://example.com/interfaceq/GetTypeInCurrentTableRequest" message="tns:GetTypeInCurrentTable" />
+      <output wsam:Action="http://example.com/interfaceq/GetTypeInCurrentTableResponse" message="tns:GetTypeInCurrentTableResponse" />
+    </operation>
+    <operation name="GetNumberOfTables">
+      <input wsam:Action="http://example.com/interfaceq/GetNumberOfTablesRequest" message="tns:GetNumberOfTables" />
+      <output wsam:Action="http://example.com/interfaceq/GetNumberOfTablesResponse" message="tns:GetNumberOfTablesResponse" />
+    </operation>
+    <operation name="GetNumberOfFieldsInTable">
+      <input wsam:Action="http://example.com/interfaceq/GetNumberOfFieldsInTableRequest" message="tns:GetNumberOfFieldsInTable" />
+      <output wsam:Action="http://example.com/interfaceq/GetNumberOfFieldsInTableResponse" message="tns:GetNumberOfFieldsInTableResponse" />
+    </operation>
+    <operation name="GetCurrentTableName">
+      <input wsam:Action="http://example.com/interfaceq/GetCurrentTableNameRequest" message="tns:GetCurrentTableName" />
+      <output wsam:Action="http://example.com/interfaceq/GetCurrentTableNameResponse" message="tns:GetCurrentTableNameResponse" />
+    </operation>
+    <operation name="ChangeCurrentTable">
+      <input wsam:Action="http://example.com/interfaceq/ChangeCurrentTableRequest" message="tns:ChangeCurrentTable" />
+      <output wsam:Action="http://example.com/interfaceq/ChangeCurrentTableResponse" message="tns:ChangeCurrentTableResponse" />
+    </operation>
+    <operation name="OpenNew">
+      <input wsam:Action="http://example.com/interfaceq/OpenNewRequest" message="tns:OpenNew" />
+      <output wsam:Action="http://example.com/interfaceq/OpenNewResponse" message="tns:OpenNewResponse" />
+    </operation>
+    <operation name="OpenBase">
+      <input wsam:Action="http://example.com/interfaceq/OpenBaseRequest" message="tns:OpenBase" />
+      <output wsam:Action="http://example.com/interfaceq/OpenBaseResponse" message="tns:OpenBaseResponse" />
+    </operation>
+    <operation name="Close">
+      <input wsam:Action="http://example.com/interfaceq/CloseRequest" message="tns:Close" />
+      <output wsam:Action="http://example.com/interfaceq/CloseResponse" message="tns:CloseResponse" />
+    </operation>
+    <operation name="getAllFiles">
+      <input wsam:Action="http://example.com/interfaceq/getAllFilesRequest" message="tns:getAllFiles" />
+      <output wsam:Action="http://example.com/interfaceq/getAllFilesResponse" message="tns:getAllFilesResponse" />
+    </operation>
+    <operation name="SaveAs">
+      <input wsam:Action="http://example.com/interfaceq/SaveAsRequest" message="tns:SaveAs" />
+      <output wsam:Action="http://example.com/interfaceq/SaveAsResponse" message="tns:SaveAsResponse" />
+    </operation>
+    <operation name="GetTableName">
+      <input wsam:Action="http://example.com/interfaceq/GetTableNameRequest" message="tns:GetTableName" />
+      <output wsam:Action="http://example.com/interfaceq/GetTableNameResponse" message="tns:GetTableNameResponse" />
+    </operation>
+    <operation name="OpenTable">
+      <input wsam:Action="http://example.com/interfaceq/OpenTableRequest" message="tns:OpenTable" />
+      <output wsam:Action="http://example.com/interfaceq/OpenTableResponse" message="tns:OpenTableResponse" />
+    </operation>
+    <operation name="RowsInTable">
+      <input wsam:Action="http://example.com/interfaceq/RowsInTableRequest" message="tns:RowsInTable" />
+      <output wsam:Action="http://example.com/interfaceq/RowsInTableResponse" message="tns:RowsInTableResponse" />
+    </operation>
+    <operation name="GetValueInTable">
+      <input wsam:Action="http://example.com/interfaceq/GetValueInTableRequest" message="tns:GetValueInTable" />
+      <output wsam:Action="http://example.com/interfaceq/GetValueInTableResponse" message="tns:GetValueInTableResponse" />
+    </operation>
+    <operation name="GetTypeInTable">
+      <input wsam:Action="http://example.com/interfaceq/GetTypeInTableRequest" message="tns:GetTypeInTable" />
+      <output wsam:Action="http://example.com/interfaceq/GetTypeInTableResponse" message="tns:GetTypeInTableResponse" />
+    </operation>
+    <operation name="Changed">
+      <input wsam:Action="http://example.com/interfaceq/ChangedRequest" message="tns:Changed" />
+      <output wsam:Action="http://example.com/interfaceq/ChangedResponse" message="tns:ChangedResponse" />
+    </operation>
+    <operation name="ColumnsInTable">
+      <input wsam:Action="http://example.com/interfaceq/ColumnsInTableRequest" message="tns:ColumnsInTable" />
+      <output wsam:Action="http://example.com/interfaceq/ColumnsInTableResponse" message="tns:ColumnsInTableResponse" />
+    </operation>
+    <operation name="CreateTable">
+      <input wsam:Action="http://example.com/interfaceq/CreateTableRequest" message="tns:CreateTable" />
+      <output wsam:Action="http://example.com/interfaceq/CreateTableResponse" message="tns:CreateTableResponse" />
+    </operation>
+    <operation name="Union">
+      <input wsam:Action="http://example.com/interfaceq/UnionRequest" message="tns:Union" />
+      <output wsam:Action="http://example.com/interfaceq/UnionResponse" message="tns:UnionResponse" />
+    </operation>
+    <operation name="AddRow">
+      <input wsam:Action="http://example.com/interfaceq/AddRowRequest" message="tns:AddRow" />
+      <output wsam:Action="http://example.com/interfaceq/AddRowResponse" message="tns:AddRowResponse" />
+    </operation>
+    <operation name="Save">
+      <input wsam:Action="http://example.com/interfaceq/SaveRequest" message="tns:Save" />
+      <output wsam:Action="http://example.com/interfaceq/SaveResponse" message="tns:SaveResponse" />
+    </operation>
+    <operation name="GetPath">
+      <input wsam:Action="http://example.com/interfaceq/GetPathRequest" message="tns:GetPath" />
+      <output wsam:Action="http://example.com/interfaceq/GetPathResponse" message="tns:GetPathResponse" />
+    </operation>
+    <operation name="BaseHasPath">
+      <input wsam:Action="http://example.com/interfaceq/BaseHasPathRequest" message="tns:BaseHasPath" />
+      <output wsam:Action="http://example.com/interfaceq/BaseHasPathResponse" message="tns:BaseHasPathResponse" />
+    </operation>
+    <operation name="DeleteTable">
+      <input wsam:Action="http://example.com/interfaceq/DeleteTableRequest" message="tns:DeleteTable" />
+      <output wsam:Action="http://example.com/interfaceq/DeleteTableResponse" message="tns:DeleteTableResponse" />
+    </operation>
+    <operation name="DeleteRows">
+      <input wsam:Action="http://example.com/interfaceq/DeleteRowsRequest" message="tns:DeleteRows" />
+      <output wsam:Action="http://example.com/interfaceq/DeleteRowsResponse" message="tns:DeleteRowsResponse" />
+    </operation>
+    <operation name="GetNameInTable">
+      <input wsam:Action="http://example.com/interfaceq/GetNameInTableRequest" message="tns:GetNameInTable" />
+      <output wsam:Action="http://example.com/interfaceq/GetNameInTableResponse" message="tns:GetNameInTableResponse" />
+    </operation>
+    <operation name="TableOpened">
+      <input wsam:Action="http://example.com/interfaceq/TableOpenedRequest" message="tns:TableOpened" />
+      <output wsam:Action="http://example.com/interfaceq/TableOpenedResponse" message="tns:TableOpenedResponse" />
+    </operation>
+    <operation name="BaseOpened">
+      <input wsam:Action="http://example.com/interfaceq/BaseOpenedRequest" message="tns:BaseOpened" />
+      <output wsam:Action="http://example.com/interfaceq/BaseOpenedResponse" message="tns:BaseOpenedResponse" />
+    </operation>
+    <operation name="ChangeRowValue">
+      <input wsam:Action="http://example.com/interfaceq/ChangeRowValueRequest" message="tns:ChangeRowValue" />
+      <output wsam:Action="http://example.com/interfaceq/ChangeRowValueResponse" message="tns:ChangeRowValueResponse" />
+    </operation>
+  </portType>
+  <binding name="serviceimplPortBinding" type="tns:interfaceq">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="GetNameInCurrentTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetTypeInCurrentTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetNumberOfTables">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetNumberOfFieldsInTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetCurrentTableName">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ChangeCurrentTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="OpenNew">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="OpenBase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Close">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getAllFiles">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SaveAs">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetTableName">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="OpenTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RowsInTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetValueInTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetTypeInTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Changed">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ColumnsInTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CreateTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Union">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddRow">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Save">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPath">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BaseHasPath">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DeleteTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DeleteRows">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetNameInTable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="TableOpened">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BaseOpened">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ChangeRowValue">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="serviceimplService">
+    <port name="serviceimplPort" binding="tns:serviceimplPortBinding">
+      <soap:address location="http://localhost:45000/q" />
+    </port>
+  </service>
+</definitions>

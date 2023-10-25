@@ -1,0 +1,3 @@
+obj\Debug\net7.0\Protos/Protobuf.cs \
+obj\Debug\net7.0\Protos/ProtobufGrpc.cs: C:/Users/igor/.nuget/packages/grpc.tools/2.49.0/build/native/include/google/protobuf/empty.proto\
+ Protos/protobuf.proto

@@ -1,0 +1,10 @@
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.csproj.AssemblyReference.cache
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.Form1.resources
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.Properties.Resources.resources
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.csproj.GenerateResource.cache
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.csproj.CoreCompileInputs.cache
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\bin\Debug\ClientWebServiceForm.exe.config
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\bin\Debug\ClientWebServiceForm.exe
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\bin\Debug\ClientWebServiceForm.pdb
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.exe
+C:\Users\igor\source\repos\ClientWebServiceForm\ClientWebServiceForm\obj\Debug\ClientWebServiceForm.pdb

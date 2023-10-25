@@ -1,0 +1,11 @@
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\bin\Debug\SUBDLab.dll
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\bin\Debug\SUBDLab.pdb
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\bin\Debug\SUBDLab.dll.config
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\obj\Debug\SUBDApp.csproj.AssemblyReference.cache
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\obj\Debug\SUBDApp.csproj.CoreCompileInputs.cache
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\obj\Debug\SUBDApp.csproj.CopyComplete
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\igor\source\repos\SUBDServer\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
